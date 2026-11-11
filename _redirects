@@ -1,0 +1,10 @@
+# Old addresses -> current pages (301 permanent).
+# Note: old index.php?sectionid=N links are handled by functions/_middleware.js,
+# because _redirects cannot match query strings.
+# Cloudflare Pages already sends /page.html to /page, so the old .htaccess
+# ".html stripping" rule needs no entry here.
+/enclosure-cooling          /enclosure-coolers      301
+/downloads.htm              /crs-downloads          301
+/checklist.htm              /thermal-solutions      301
+/contact.htm                /contact-us             301
+/index.htm                  /                       301
