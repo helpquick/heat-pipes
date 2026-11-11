@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ page.title | default: site.title }}</title>
+<link rel="canonical" href="{{ site.url }}{{ page.url | replace: '.html', '' }}">
+{% if page.description and page.description != "" %}<meta name="description" content="{{ page.description }}">{% endif %}
+{% if page.keywords and page.keywords != "" %}<meta name="keywords" content="{{ page.keywords }}">{% endif %}
+<meta name="robots" content="index,follow">
+<link rel="stylesheet" href="/styles/crs/style.css">
+<link rel="stylesheet" href="/assets/css/site.css">
+{% include analytics.html %}
+</head>
+<body>
+<div id="container">
+  <div id="header">
+    <ul id="footer_nav">
+      {%- for item in site.data.navigation.top %}
+      <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+      {%- endfor %}
+    </ul>
+
+    <h1 id="logo"><a href="/">CRS Engineering</a></h1>
+
+    <button type="button" id="menu_toggle" aria-expanded="false" aria-controls="indextabs">Menu</button>
+
+    <ul id="indextabs" class="shadetabs">
+      {%- for tab in site.data.navigation.tabs %}
+      <li{% if page.tab == tab.id %} class="selected"{% endif %}>
+        <a href="{{ tab.url }}"{% if page.tab == tab.id %} aria-current="page"{% endif %}>{{ tab.title }}</a>
+        <div class="tabcontent">
+          {%- for child in tab.children %}
+          <a href="{{ child.url }}">{{ child.title }}</a>
+          {%- endfor %}
+        </div>
+      </li>
+      {%- endfor %}
+    </ul>
+
+    <div id="content">
+      <div class="content-inner">
+{{ content }}
+      </div>
+    </div>
+  </div>
+
+  <div id="footer">
+    {%- if page.footer == "brochure" %}
+    <div id="footer_content"><a href="/crs-downloads"><img src="/media/uk_flag.gif" alt="uk flag" width="35" height="23"></a> <a href="/crs-downloads"><img src="/media/german_flag.gif" alt="german flag" width="35" height="23"></a> <a href="/crs-downloads"><img src="/media/italy-flag.jpg" alt="IT FLAG" width="35" height="23"></a><br>
+      <a href="/crs-downloads">Download PDF Brochure</a></div>
+    {%- endif %}
+  </div>
+</div>
+<script>
+  (function () {
+    var b = document.getElementById('menu_toggle'), m = document.getElementById('indextabs');
+    b.addEventListener('click', function () {
+      var open = m.classList.toggle('open');
+      b.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  })();
+</script>
+</body>
+</html>

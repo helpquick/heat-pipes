@@ -1,0 +1,48 @@
+# Top-right links
+top:
+  - title: Latest News
+    url: /latest-news
+  - title: About Us
+    url: /about-us
+  - title: Technical Representatives
+    url: /technical-representatives
+
+# Main tabs. "id" matches the "tab:" line at the top of each page, so that tab is highlighted.
+tabs:
+  - title: Home Page
+    id: home
+    url: /
+  - title: Welcome to CRS
+    id: welcome
+    url: /welcome-to-crs
+  - title: CRS Heat Pipes
+    id: heat-pipes
+    url: /what-is-a-heat-pipe
+    children:
+      - { title: "What is a Heat-pipe?", url: /what-is-a-heat-pipe }
+      - { title: "How Does It Work?", url: /how-does-a-heat-pipe-work }
+      - { title: "Standard Range", url: /standard-range }
+      - { title: "Types", url: /heat-pipe-types }
+      - { title: "Technical Notes", url: /technical-notes }
+      - { title: "Installation", url: /installation-notes }
+      - { title: "Applications", url: /specific-applications }
+      - { title: "Enclosure coolers", url: /enclosure-coolers }
+      - { title: "Electronic Cooling", url: /electronic-cooling }
+  - title: Mould Cooling
+    id: mould
+    url: /mould-tool-cooling
+    children:
+      - { title: "Cool Core Heat-Pipes", url: /cool-core-heat-pipes }
+      - { title: "CRS Cool Jets", url: /crs-cool-jets }
+  - title: Interface Compounds
+    id: compounds
+    url: /thermal-interface-compounds
+  - title: Thermal Checklist
+    id: checklist
+    url: /thermal-solutions
+  - title: Downloads
+    id: downloads
+    url: /crs-downloads
+  - title: Contact Us
+    id: contact
+    url: /contact-us
