@@ -1,0 +1,359 @@
+body {
+	padding: 0px;
+	margin: 0px auto;
+	
+	width: 810px;
+	
+	background: #f1f1f1 url('images/bk.gif') repeat-x left top;
+}
+
+img {
+	border: none;
+}
+
+a {
+	color: #006699;
+}
+
+div#container {
+	padding: 0px;
+	margin: 30px auto;
+	
+	width: 810px;
+	
+	background: transparent url('images/body.gif') repeat-y left top;
+	
+	position: relative;
+
+}
+
+
+div#header {
+	padding: 0px;
+	margin: 0px auto;
+	
+	width: 810px;
+	
+	background: transparent url('images/body_top.gif') no-repeat left top;
+	
+	position: relative;
+}
+
+h1#logo {
+	width: 445px;
+	height: 81px;
+	
+	background: transparent url('images/logo.gif') no-repeat right bottom;
+	
+	text-indent: -10000px;
+	
+	padding: 10px;
+	margin: 0px;
+	
+	float: left;
+}
+
+/*
+	Search Box
+*/
+div#search_box {
+	padding: 0px;
+	margin: 0px;
+}
+
+div#search_box form {
+	float: right;
+	
+	margin: 0px;
+	padding: 15px 15px 0px 0px;
+}
+
+div#search_box input.search_box {
+	
+	background: transparent url('images/search_box.gif') no-repeat left top;
+	
+	border: none;
+	
+	width: 171px;
+	height: 24px;
+	
+	padding: 6px 0px 0px 5px;
+	margin: 0px;
+}
+
+
+/*
+	Search Results
+*/
+
+div.search_result {
+	padding: 0px;
+	margin: 10px 0px;
+}
+div.search_title {
+	font-weight: bold;
+	font-size: 12px;
+	
+	padding: 0px;
+	margin: 0px;
+}
+div.search_text {
+	padding: 5px 0px;
+	margin: 0px;
+}
+span.keyword {
+	font-weight: bold;
+	color: #184e5f;
+}
+
+
+div#search_box input.search_btn {
+	
+	background: transparent url('images/search_btn.gif') no-repeat left top;
+	
+	border: none;
+	
+	width: 82px;
+	height: 30px;
+	
+	padding: 0px;
+	margin: 0px;
+	
+	color: #FFFFFF;
+	font-size: 11px;
+	
+	cursor: pointer;
+}
+
+div#support_info {
+	float: right;
+	
+	padding: 2px 17px;
+	margin: 0px;
+	
+	font-family: Tahoma, Verdana, Arial;
+	font-size: 11px;
+	
+	color: #6b6b6b;
+}
+
+/*
+	Tabs
+*/
+ul.shadetabs {
+	padding: 0px;
+	margin: 0px auto;
+	
+	clear: both;
+	
+	width: 760px;
+	
+	position: relative;
+}
+
+ul.shadetabs li {
+	padding: 0px;
+	margin: 0px;
+	
+	list-style: none;
+	line-height: 21px;
+	
+	float: left;
+	
+	font-family: Tahoma, Verdana, Arial;
+	font-size: 11px;
+}
+ul.shadetabs li.selected { 
+	background: transparent url('images/selected_right.gif') repeat-x right top;
+}
+
+
+
+ul.shadetabs li a {
+	text-decoration: none;
+	color: #000000;
+	line-height: 21px;
+	padding: 4px 8px;
+	outline: none;
+}
+
+ul.shadetabs li.selected a { 
+/*
+	background: transparent url('images/selected_left.gif') no-repeat left top;
+*/
+	color: #ffffff;
+}
+
+
+
+
+ul.shadetabs li div.tabcontent {
+	padding: 0px 5px;
+	margin: 0px auto;
+	
+	background: #215195 url('images/menu_footer.gif') no-repeat left bottom; 
+	
+	width: 750px;
+	height: 21px;
+	
+	line-height: 21px;
+	
+	font-size: 10px;
+	
+	clear: both;
+	
+	color: #ffffff;
+	
+	position: absolute;
+	top: 21px;
+	left: 0px;
+}
+
+ul.shadetabs li div.tabcontent a {
+	color: #ffffff;
+	text-decoration: underline;
+	
+	padding: 0px 4px;
+	margin: 0px;
+	
+	background: none;
+	
+	display: inline;
+	
+}
+
+/*
+	Content
+*/
+
+div#content {
+	clear: both;
+	width: 750px;
+	
+	margin: 50px auto;
+	padding: 20px 0px 0px 0px;
+	
+	font-family: Tahoma, Verdana, Arial;
+	font-size: 11px;
+	
+	line-height: 16px;
+}
+div#content p {
+	margin: 0px;
+	padding: 5px 0px;
+	
+	line-height: 16px;
+}
+
+
+div#content div.left_box {
+	float: left;
+	width: 350px;
+	
+	padding: 0px;
+	margin: 0px;
+	
+}
+
+div#content div.right_box {
+	float: right;
+	width: 350px;
+	
+	padding: 0px;
+	margin: 0px;
+	
+}
+/*
+	Footer
+*/
+
+div#footer {
+	background: transparent url('images/body_bottom.gif') no-repeat center bottom;
+	width: 790px;
+	height: 30px;
+		
+	padding: 0px 10px;
+	margin: 0px;
+	
+	position: relative;
+	
+	clear: both;
+}
+
+/*
+	Footer Content
+*/
+div#footer_content {
+	position: absolute;
+	top: -20px;
+	left: 20px;
+	
+	width: 300px;
+	
+	font-family: Tahoma, Verdana, Arial;
+	font-size: 11px;
+	
+	padding: 0px 5px;
+}
+
+/*
+	Footer Nav
+*/
+
+ul#footer_nav {	
+	float: right;
+	
+	padding: 0px;
+	margin: 10px 10px 0px 0px;
+	height: 25px;
+	width: 300px;
+}
+ul#footer_nav li {
+	list-style-type: none;
+	
+	float: right;
+	
+	font-family: Tahoma, Verdana, Arial;
+	font-size: 11px;
+	
+	padding: 0px;
+	margin: 0px;
+	
+	color: #000000;
+}
+ul#footer_nav li a {
+	color: #000000;
+	text-decoration: none;
+	
+	display: block;
+	
+	padding: 0px 5px;
+	margin: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

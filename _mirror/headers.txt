@@ -1,0 +1,11 @@
+HTTP/2 200 
+server: nginx/1.30.4
+date: Wed, 11 Nov 2026 23:39:22 GMT
+content-type: text/html
+content-length: 6915
+last-modified: Mon, 16 Jun 2025 21:14:43 GMT
+etag: "1b03-637b6e27ae198"
+accept-ranges: bytes
+vary: Accept-Encoding
+strict-transport-security: max-age=31536000; includeSubDomains
+

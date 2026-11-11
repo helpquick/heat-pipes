@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="canonical" href="https://www.heat-pipes.com/technical-notes">
+<!-- Start Open Web Analytics Tracker -->
+<script type="text/javascript">
+//<![CDATA[
+var owa_baseUrl = 'https://www.yitd.co.uk/woa/';
+var owa_cmds = owa_cmds || [];
+owa_cmds.push(['setSiteId', 'cba52ca2e131411ed2a90c1967ce029a']);
+owa_cmds.push(['trackPageView']);
+owa_cmds.push(['trackClicks']);
+
+(function() {
+    var _owa = document.createElement('script'); _owa.type = 'text/javascript'; _owa.async = true;
+    owa_baseUrl = ('https:' == document.location.protocol ? window.owa_baseSecUrl || owa_baseUrl.replace(/http:/, 'https:') : owa_baseUrl );
+    _owa.src = owa_baseUrl + 'modules/base/js/owa.tracker-combined-min.js';
+    var _owa_s = document.getElementsByTagName('script')[0]; _owa_s.parentNode.insertBefore(_owa, _owa_s);
+}());
+//]]>
+</script>
+<!-- End Open Web Analytics Code -->
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CM3WPL30TG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag()
+  gtag('js', new Date());
+
+  gtag('config', 'G-CM3WPL30TG');
+</script>
+
+<title>CRS Engineering - Technical Notes</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+<meta name="Description" content="Technical Notes" />
+<meta name="Author" content="MBL Solutions Ltd ( kieron.wilson@mblsolutions.co.uk ) " />
+<meta name="Classification" content="Technical Notes" />
+<meta name="Keywords" content="Technical Notes" />
+
+<meta name="robots" content="index,follow,all" />
+<meta name="revisit-after" content="7 days" />
+
+<style type="text/css" media="screen">
+@import url("styles/crs/style.css");
+</style>
+
+<script type="text/javascript" src="styles/crs/tabcontent.js"></script>
+
+
+</head>
+<body>
+
+	
+	<div id="container">
+
+		<div id="header">
+
+			<ul id="footer_nav">
+				<li><a href="latest-news">Latest News</a></li>
+				<li><a href="about-us">About Us</a></li>
+				<li><a href="technical-representatives">Technical Representatives</a></li>
+			</ul>
+		
+			<h1 id="logo">CRS Engineering</h1>
+			
+			<div id="search_box">
+				<!--
+				<form method="post" action="index.php?sectionid=2">
+					<input name="siteSearch_keyword" type="text" class="search_box" value="Search" />
+					<input type="submit" value="Search" class="search_btn" />
+				</form>
+				-->
+			</div>
+			
+			<div id="support_info">&nbsp;</div>
+			
+			<ul id="indextabs" class="shadetabs">
+			
+				<li >
+					<a href="/" rel="link_28">Home Page</a>
+					
+					<div id="link_28" class="tabcontent">
+					</div>
+					
+				</li>
+				<li >
+					<a href="welcome-to-crs" rel="link_14">Welcome to CRS</a>
+					
+					<div id="link_14" class="tabcontent">
+					</div>
+					
+				</li>
+				<li >
+					<a href="/" rel="link_1">CRS Heat Pipes</a>
+					
+					<div id="link_1" class="tabcontent">
+					<a href="index.php?sectionid=3">What is a Heat-pipe?</a>
+					<a href="index.php?sectionid=4">How Does It Work?</a>
+					<a href="index.php?sectionid=5">Standard Range</a>
+					<a href="index.php?sectionid=6">Types</a>
+					<a href="index.php?sectionid=7">Technical Notes</a>
+					<a href="index.php?sectionid=8">Installation</a>
+					<a href="index.php?sectionid=9">Applications</a>
+					<a href="enclosure-coolers">Enclosure coolers</a>
+					<a href="electronic-cooling">Electronic Cooling</a>
+					</div>
+					
+				</li>
+				<li >
+					<a href="mould-tool-cooling" rel="link_15">Mould Cooling</a>
+					
+					<div id="link_15" class="tabcontent">
+					<a href="index.php?sectionid=21">Cool Core Heat-Pipes</a>
+					<a href="index.php?sectionid=22">CRS Cool Jets</a>
+					</div>
+					
+				</li>
+				<li >
+					<a href="thermal-interface-compounds" rel="link_18">Interface Compounds</a>
+					
+					<div id="link_18" class="tabcontent">
+					</div>
+					
+				</li>
+				<li >
+					<a href="thermal-solutions" rel="link_19">Thermal Checklist</a>
+					
+					<div id="link_19" class="tabcontent">
+					</div>
+					
+				</li>
+				<li >
+					<a href="crs-downloads" rel="link_20">Downloads</a>
+					
+					<div id="link_20" class="tabcontent">
+					</div>
+					
+				</li>
+				<li >
+					<a href="contact-us" rel="link_21">Contact Us</a>
+					
+					<div id="link_21" class="tabcontent">
+					</div>
+					
+				</li>
+
+			</ul>
+
+			<script type="text/javascript">
+				initializetabcontent( "indextabs" );
+			</script>
+
+			<div id="content">
+			
+				<table border="0" cellspacing="0" cellpadding="0" width="750" height="443" align="center">
+	<tbody>
+		<tr height="5">
+			<td colspan="4" height="100%">
+			<table border="0" cellspacing="0" cellpadding="0" width="750" height="100%" class="heatNotes">
+				<tbody>
+					<tr>
+						<td colspan="4"><strong><a style="color: #ac1837" name="top"></a>Heat-pipe Technical Notes<br />
+						<br />
+						</strong>The
+						following tables provide design engineers with as much information as
+						is possible here for the CRS Engineering Standard Range Heat-pipes. <em>(Table 1)</em>&nbsp; needs to be read in conjunction with <em>(Table 2)</em> and <em>(Table 3)</em>, for overall power transmission capabilities.
+						</td>
+					</tr>
+					<tr height="20">
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td width="500">&nbsp;</td>
+					</tr>
+					<tr valign="top">
+						<td width="400"><strong>Power Handling Capability</strong><br />
+						The maximum power transmission ratings stated in <em>(Table 1)</em>.
+						opposite are for CRS 5000 ST series and HT series Heat-pipes operating
+						in a horizontal orientation (i.e. virtual zero gravitational
+						influence).
+						The temperature ranges given of + 20&deg;C to + 120&deg;C are mean operating
+						temperatures taken at a mid-measurement point between the heat input
+						and heat output sections arranged at either end.</td>
+						<td width="30">&nbsp;</td>
+						<td colspan="2">
+						<table border="1" cellspacing="0" cellpadding="0" width="100%" class="heatNotes" align="right" bgcolor="white">
+							<tbody>
+								<tr>
+									<td colspan="6" bgcolor="white">&nbsp;&nbsp;Table 1</td>
+								</tr>
+								<tr align="center">
+									<td rowspan="2" width="120" bgcolor="#f1d59e">CRS- Series 5000<br />
+									( Diameter mm )</td>
+									<td colspan="5" bgcolor="#b6bacd">Maximum Power Handling Capability ( Watts )
+									</td>
+								</tr>
+								<tr align="center" bgcolor="#b6bacd">
+									<td>@+20&deg;C</td>
+									<td>@+40&deg;C</td>
+									<td>@+60&deg;C</td>
+									<td>@+80&deg;C</td>
+									<td>@+120&deg;C</td>
+								</tr>
+								<tr align="center">
+									<td bgcolor="#f1d59e">2.0</td>
+									<td>9.0</td>
+									<td>11.0</td>
+									<td>12.0</td>
+									<td>13.0</td>
+									<td>14.0</td>
+								</tr>
+								<tr align="center">
+									<td bgcolor="#f1d59e">2.5</td>
+									<td>12.5</td>
+									<td>16.0</td>
+									<td>17.5</td>
+									<td>19.5</td>
+									<td>21.5</td>
+								</tr>
+								<tr align="center">
+									<td bgcolor="#f1d59e">3.0</td>
+									<td>16.0</td>
+									<td>23.5</td>
+									<td>24.5</td>
+									<td>26.5</td>
+									<td>29.0</td>
+								</tr>
+								<tr align="center">
+									<td bgcolor="#f1d59e">4.0</td>
+									<td>22.0</td>
+									<td>27.5</td>
+									<td>30.5</td>
+									<td>32.0</td>
+									<td>37.0</td>
+								</tr>
+								<tr align="center">
+									<td bgcolor="#f1d59e">5.0</td>
+									<td>50.0</td>
+									<td>58.0</td>
+									<td>63.0</td>
+									<td>65.0</td>
+									<td>68.0</td>
+								</tr>
+								<tr align="center">
+									<td bgcolor="#f1d59e">6.0</td>
+									<td>72.0</td>
+									<td>86.0</td>
+									<td>93.0</td>
+									<td>98.0</td>
+									<td>108.0</td>
+								</tr>
+								<tr align="center">
+									<td bgcolor="#f1d59e">8.0</td>
+									<td>90.0</td>
+									<td>108.0</td>
+									<td>115.0</td>
+									<td>122.0</td>
+									<td>134.0</td>
+								</tr>
+								<tr align="center">
+									<td bgcolor="#f1d59e">10.0</td>
+									<td>112.0</td>
+									<td>134.0</td>
+									<td>143.0</td>
+									<td>152.0</td>
+									<td>169.0</td>
+								</tr>
+								<tr align="center">
+									<td bgcolor="#f1d59e">12.0</td>
+									<td>148.0</td>
+									<td>178.0</td>
+									<td>186.0</td>
+									<td>197.0</td>
+									<td>218.0</td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+					</tr>
+					<tr height="20">
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td width="450">&nbsp;</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td colspan="3"><strong>Effects of Gravity upon Capillary Action</strong><br />
+						The
+						function of a Heat-pipe is dependant upon an effective capillary action
+						system to return the working fluid from the condenser section (Cd)
+						where cooling is applied, to the evaporator section (Ev) where heat
+						input to the Heat-pipe is applied. This function is served by the
+						porous lining wick structure or &ldquo;wicking system&rdquo; which is built into
+						the Heat-pipe. Gravity has an important influence on the thermal
+						performance of Heat-pipes. As can be seen in <em>(Table 2)</em>&nbsp; gravity
+						can be used to advantage to increase the thermal transmission
+						capability to up to twice that of the maximum horizontal position rated
+						value shown in <em>(Table 1)</em>. (i.e. provided that the Ev section is
+						below the Cd section). In this orientation, gravity assists the return
+						of the return working fluid.</td>
+						<td align="center"><img style="border-color: #666666" src="media/hptn1.jpg" border="1" alt=""  /></td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+		<tr height="20">
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td colspan="4" height="100%">
+			<table border="0" cellspacing="0" cellpadding="0" width="750" height="100%" class="heatNotes">
+				<tbody>
+					<tr>
+						 
+						<td><strong>Opposing Effects of Gravity .&hellip;</strong><br />
+						In the opposing mode, i.e. with Ev section high, and driving heat 
+						downwards, the Heat-pipe function is now totally dependent upon capillary 
+						action for the return the working fluid to the evaporator and to overcome 
+						the gravitational restraint. <em>(Table 3)</em>&nbsp; shows the effects 
+						of this, which is to repress the performance capability. In this situation 
+						the Heat-pipe capillary pumping capability must work against the static 
+						head difference between the Cd and Ev sections. For particular applications 
+						where orientational constraints demand Heat-pipes should operate in 
+						this mode, CRS engineering can offer Heat-pipes with special anti-gravity 
+						wicking systems. These SSX series Heat-pipes use wick structures that 
+						develop an increased capillary pumping action over that of the standard 
+						series. SSX series Heat-pipes have typically an increased diametrical size
+						for a given value of power handling capability. </td>
+						<td width="18">&nbsp;</td>
+						<td colspan="2"><img style="border-color: #666666" src="media/hptn1_pg2.jpg" border="1" alt=""  /></td>
+					</tr>
+					<tr>
+						 
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="4">
+			<table border="0" cellspacing="0" cellpadding="0" width="750" height="100%" class="heatNotes">
+				<tbody>
+					<tr>
+						<td><img style="border-color: #666666" src="media/hptn2_pg2.jpg" border="1" alt="" align="middle"  /></td>
+						<td width="20">&nbsp;</td>
+						<td colspan="3" valign="top"><strong>Photo showing sections of Heat-pipes.</strong> <em>(left)</em><br />
+						Structures can be of sintered metallic lining and of multi layer woven 
+						metallic lining depending upon particular performance characteristics 
+						requirements. </td>
+					</tr>
+					<tr>
+						 
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						 
+						<td colspan="6">For more information assistance with thermal solution 
+						design, considerations and concepts, consult CRS Engineering Ltd for 
+						an appraisal of your application&hellip;&hellip; see <a href="http://www.heat-pipes.com/checklist.htm" onfocus="if(this.blur)this.blur()">Thermal 
+						Solutions Enquiry Check List</a></td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+	</tbody>
+</table>
+				
+				
+				
+			</div>
+			
+		</div>
+		
+		<div id="footer">
+			
+		
+		</div>
+	
+	</div>
+
+
+	
+
+</body>
+</html>
