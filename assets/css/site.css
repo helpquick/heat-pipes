@@ -1,0 +1,88 @@
+/* Additions to the original CRS stylesheet (styles/crs/style.css):
+   server-side menu highlighting in place of the old tab script, and a phone layout. */
+
+h1#logo a { display: block; width: 100%; height: 100%; }
+
+/* ---- Menu (desktop) ---- */
+#menu_toggle { display: none; }
+
+ul.shadetabs { height: 42px; }
+ul.shadetabs::after {            /* the blue bar under the tabs, shown even when a tab has no sub-menu */
+  content: "";
+  position: absolute; top: 21px; left: 0;
+  width: 760px; height: 21px;
+  background: #215195 url('/styles/crs/images/menu_footer.gif') no-repeat left bottom;
+}
+ul.shadetabs li div.tabcontent { display: none; z-index: 1; }
+ul.shadetabs li.selected div.tabcontent { display: block; }
+ul.shadetabs li:hover div.tabcontent { display: block; z-index: 2; }
+ul.shadetabs li:hover a { text-decoration: underline; }
+ul.shadetabs li div.tabcontent a { white-space: nowrap; }
+
+div#content { margin-top: 10px; }
+div#content video { display: block; margin: 0 auto; }
+div#footer_content a { color: #000; text-decoration: none; }
+
+/* ---- Phones and small tablets ---- */
+@media (max-width: 830px) {
+  body { width: auto; background-size: 6px 383px; }
+  div#container {
+    width: auto; margin: 12px; background: #fff;
+    border-radius: 16px; overflow: hidden;
+  }
+  div#header { width: auto; background: none; }
+
+  ul#footer_nav { float: none; width: auto; height: auto; margin: 0; padding: 10px 12px 0; text-align: right; }
+  ul#footer_nav li { float: none; display: inline-block; }
+
+  h1#logo {
+    float: none; width: auto; max-width: 445px; height: 0; padding: 0 0 18.2% 0; margin: 4px 12px 8px;
+    background-size: contain; background-position: left center;
+  }
+
+  #menu_toggle {
+    display: block; margin: 0 12px; width: calc(100% - 24px);
+    padding: 10px 14px; border: 0; border-radius: 4px;
+    background: #215195; color: #fff; text-align: left;
+    font: bold 14px Tahoma, Verdana, Arial, sans-serif; cursor: pointer;
+  }
+  #menu_toggle::after { content: "\2630"; float: right; }
+
+  ul.shadetabs { display: none; width: auto; height: auto; margin: 0 12px; }
+  ul.shadetabs.open { display: block; }
+  ul.shadetabs::after { display: none; }
+  ul.shadetabs li { float: none; font-size: 14px; border-bottom: 1px solid #ddd; }
+  ul.shadetabs li a { display: block; padding: 10px 8px; line-height: 20px; }
+  ul.shadetabs li.selected { background: #e8edf5; }
+  ul.shadetabs li.selected a { color: #000; font-weight: bold; }
+  ul.shadetabs li div.tabcontent,
+  ul.shadetabs li:hover div.tabcontent {
+    display: block; position: static; width: auto; height: auto;
+    padding: 0 0 6px 16px; background: none; color: #000; line-height: normal;
+  }
+  ul.shadetabs li div.tabcontent a,
+  ul.shadetabs li.selected div.tabcontent a {
+    display: block; color: #006699; text-decoration: none; font-weight: normal;
+    padding: 6px 8px; font-size: 13px;
+  }
+
+  div#content { width: auto; margin: 16px 0 0; padding: 0 12px 16px; font-size: 13px; line-height: 19px; }
+  div#content p { line-height: 19px; }
+  /* Pages were laid out as fixed 750px tables: let them scroll sideways rather than squash. */
+  div#content .content-inner { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  div#content img, div#content video { max-width: 100%; height: auto; }
+  /* The old pages use tables for layout: on a phone, stack their cells one under another.
+     Tables of figures (class="data") keep their grid and scroll sideways if they don't fit. */
+  div#content table:not(.data),
+  div#content table:not(.data) > tbody,
+  div#content table:not(.data) > tbody > tr,
+  div#content table:not(.data) > tbody > tr > td {
+    display: block; width: auto !important; height: auto !important;
+  }
+  div#content table:not(.data) > tbody > tr > td:empty { display: none; }
+  div#content table.data { display: block; overflow-x: auto; width: auto !important; height: auto !important; max-width: 100%; }
+  div#content table.data img { max-width: none; }
+
+  div#footer { width: auto; height: auto; background: none; padding: 0 12px 12px; }
+  div#footer_content { position: static; width: auto; padding: 0; }
+}

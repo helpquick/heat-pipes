@@ -1,0 +1,34 @@
+title: CRS Engineering
+description: >-
+  UK and Germany based heat pipes and heat sinks manufacturers, with a range of
+  standard and custom built designs available.
+url: "https://www.heat-pipes.com"
+baseurl: ""
+lang: en_GB
+email: crs@heat-pipes.com
+
+# Analytics carried over from the old site. Delete a line to switch that tracker off.
+google_analytics: G-CM3WPL30TG
+owa_site_id: cba52ca2e131411ed2a90c1967ce029a
+
+# Pages build as about-us.html etc. and are linked as /about-us. Cloudflare Pages
+# serves them at those addresses, the same ones the old site used.
+permalink: /:path
+
+plugins:
+  - jekyll-sitemap
+
+include:
+  - _redirects
+  - _headers
+  - _routes.json
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+  - .ruby-version
+  - functions
+  - _mirror
+  - scripts
